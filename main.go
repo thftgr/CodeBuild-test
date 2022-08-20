@@ -42,7 +42,7 @@ func main() {
 	e := echo.New()
 	e.GET("/healthy", func(c echo.Context) error {
 		log.Println("/healthy")
-		return c.String(200, "ok")
+		return c.String(200, "okok")
 	})
 	e.Logger.Fatal(e.Start(":" + serverPort))
 }
